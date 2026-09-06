@@ -3,9 +3,22 @@
   "version": "0.1.0",
   "description": "Make \"a named person vouched for this exact text\" a machine-checkable claim: a tamper-evident register, a signature validator, sign-off revoking database triggers and an admissibility check for automated reviewers.",
   "license": "MIT",
+  "author": "SuplerMed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C2H5OK/signoff-chain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C2H5OK/signoff-chain/issues"
+  },
+  "homepage": "https://github.com/C2H5OK/signoff-chain#readme",
   "type": "module",
-  "engines": { "node": ">=22.13" },
-  "bin": { "signoff": "./bin/signoff.mjs" },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "signoff": "./bin/signoff.mjs"
+  },
   "exports": {
     ".": "./src/index.mjs",
     "./chain": "./src/chain.mjs",
@@ -14,8 +27,23 @@
     "./triggers": "./src/triggers.mjs",
     "./critique": "./src/critique.mjs"
   },
-  "files": ["src", "bin", "README.md", "LICENSE"],
-  "scripts": { "test": "node --test test/*.test.mjs" },
-  "keywords": ["provenance", "tamper-evident", "hash-chain", "audit-log", "sign-off", "editorial", "compliance"],
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "provenance",
+    "tamper-evident",
+    "hash-chain",
+    "audit-log",
+    "sign-off",
+    "editorial",
+    "compliance"
+  ],
   "dependencies": {}
 }

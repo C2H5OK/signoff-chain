@@ -226,6 +226,21 @@ for the design decisions, the calibration rules and the accuracy of everything s
 this file. The measurements quoted in the documentation come from the production system,
 not from the model.
 
+## Publishing to npm
+
+Not on the registry yet; the name `signoff-chain` is free. To publish, from a machine
+logged in to npm:
+
+```
+npm test            # 47 tests must pass
+npm pack --dry-run  # check the file list: 10 files, no tests, no local paths
+npm publish --access public
+```
+
+The package builds cleanly and installs from its own tarball — verified by installing
+`signoff-chain-0.1.0.tgz` into an empty project and driving the CLI through a
+known-tampering case.
+
 ## Licence
 
 MIT — see [LICENSE](LICENSE). Files carry SPDX headers.
