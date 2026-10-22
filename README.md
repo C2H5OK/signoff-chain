@@ -214,18 +214,6 @@ after the corresponding failure actually happened.
 
 The service itself, its database and its content are not part of this package.
 
-## Use of generative AI
-
-Disclosed in line with
-[NLnet's policy on generative AI](https://nlnet.nl/foundation/policies/generativeAI/).
-
-The code in this package was extracted and rewritten with the assistance of a large
-language model (Claude, Anthropic), working from existing internal tooling written for the
-SuplerMed project. A human author reviewed every line, ran the tests, and is accountable
-for the design decisions, the calibration rules and the accuracy of everything stated in
-this file. The measurements quoted in the documentation come from the production system,
-not from the model.
-
 ## Publishing to npm
 
 Not on the registry yet; the name `signoff-chain` is free. To publish, from a machine
